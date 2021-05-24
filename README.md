@@ -7,35 +7,37 @@ Site deployed : https://sarahro.io
 ```bash
 
 public
-├── img
-│   ├── All Img ....
+│
+├── imgages
+│   ├── png
+│   └── x-icon
+│
 ├── favicon.ico
 ├── index.html
 ├── manifest.json
 ├── robots.txt
 ├── _redirects
 │
-│
 src
+│
 ├── App.js
+├── index.js
+│
+├── assets
+│   └── img
+│
 ├── components
-│   ├── Header.js
-│   ├── Content.js
-│   ├── Footer.js
-│   ├── fonts
-│   │   ├── Font.js
-│   │   ├── PopularFonts.js
-│   │   ├── RecentFonts.js
-│   │   └── TrendingFonts.js
-│   └── selection
-│       ├── FontSize.js
-│       ├── SelectFont.js
-│       └── Text.js
-├── context
-│   └── Context.js
-└── pages
-│    └── Home.js
-└── index.js
+│   └──  SocialNetWork.js
+│
+├── pages
+│   └──  ComingSoon.js
+│
+├── style
+│   ├── components
+│   │   └── SocialNetWork.css
+│   ├── pages
+└───└───└──── ComingSoon.css
+
 ```
 
 ## Install
