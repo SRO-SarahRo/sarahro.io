@@ -1,7 +1,8 @@
 import React from 'react'
-import '../style/ComingSoon.css'
+import '../style/pages/ComingSoon.css'
 import logoComingSoon from '../assets/img/under_construction.svg'
-import logoSardineRo from '../assets/img/SardineRO.png'
+import logoSarahRo from '../assets/img/SarahRo.png'
+import SocialNetwork from '../components/SocialNetwork'
 
 const ComingSoon = () => {
   return (
@@ -12,7 +13,7 @@ const ComingSoon = () => {
         <img src={logoComingSoon} alt='' className='img-comingSoon' />
       </div>
       <div className='right-comingSoon'>
-        <img src={logoSardineRo} alt='' className='logo-SardineRo' />
+        <img src={logoSarahRo} alt='' className='logo-SarahRo' />
         <div className='subscribe'>
           <h3>Get Notified When We Go Live</h3>
           <div className='form-comingSoon'>
@@ -22,6 +23,10 @@ const ComingSoon = () => {
             </form>
           </div>
         </div>
+        <footer className='footer-comingSoon'>
+          <SocialNetwork />
+          <p>&copy;2021 by SarahRo | SRO</p>
+        </footer>
       </div>
     </div>
   )
