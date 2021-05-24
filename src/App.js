@@ -1,6 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import ComingSoon from './pages/ComingSoon';
-import './style/App.css';
 
 function App() {
   return (
