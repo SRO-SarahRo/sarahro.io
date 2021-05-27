@@ -1,12 +1,16 @@
-import { Switch, Route, Redirect } from 'react-router-dom';
-import ComingSoon from './pages/ComingSoon';
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages";
+import Notified from "./pages/notified";
 
 function App() {
   return (
-    <Switch>
-      <Route exact path='/' component={ComingSoon} />
-      <Redirect to='/' />
-    </Switch>
+    <Router>
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/notified" component={Notified} exact />
+      </Switch>
+    </Router>
   );
 }
 

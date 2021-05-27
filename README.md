@@ -6,37 +6,7 @@ Site deployed : https://sarahro.io
 
 ```bash
 
-public
-│
-├── imgages
-│   ├── png
-│   └── x-icon
-│
-├── favicon.ico
-├── index.html
-├── manifest.json
-├── robots.txt
-├── _redirects
-│
-src
-│
-├── App.js
-├── index.js
-│
-├── assets
-│   └── img
-│
-├── components
-│   └──  SocialNetWork.js
-│
-├── pages
-│   └──  ComingSoon.js
-│
-├── style
-│   ├── components
-│   │   └── SocialNetWork.css
-│   ├── pages
-└───└───└──── ComingSoon.css
+In progress...
 
 ```
 
