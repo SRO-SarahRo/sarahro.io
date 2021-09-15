@@ -39,7 +39,7 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   
-    &:hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
     color: #FBBF24;
   }
