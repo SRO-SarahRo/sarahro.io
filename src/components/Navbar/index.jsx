@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, NavBtnLink, MobileIcon, NavMenu } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
@@ -29,8 +29,8 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>SarahRO</NavLogo>
             <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Swap xSRO</NavLogo>
-            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Marketplace xSRO</NavLogo>
-            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Docs SRO</NavLogo>
+            <NavLogo to={{ pathname: "https://apps.sarahro.io/" }} target="_blank">Marketplace xSRO</NavLogo>
+            <NavLogo to={{ pathname: "https://docs.sarahro.io/" }} target="_blank">Docs SRO</NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
