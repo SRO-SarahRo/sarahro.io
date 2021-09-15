@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react'
-import { FaBars } from 'react-icons/fa'
-import {IconContext} from 'react-icons/lib'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu} from './NavbarElements'
+import React, { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { Nav, NavbarContainer, NavLogo, NavBtnLink, MobileIcon, NavMenu } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
   const changeNav = () => {
-    if(window.scrollY >= 80) {
+    if (window.scrollY >= 80) {
       setScrollNav(false)
     } else {
       setScrollNav(false)
@@ -24,18 +24,21 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-    <IconContext.Provider value={{ color: '#fff'}}>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome}>SarahRO</NavLogo>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
-          <NavMenu>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
-    </IconContext.Provider>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <Nav scrollNav={scrollNav}>
+          <NavbarContainer>
+            <NavLogo to='/' onClick={toggleHome}>SarahRO</NavLogo>
+            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Swap xSRO</NavLogo>
+            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Marketplace xSRO</NavLogo>
+            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Docs SRO</NavLogo>
+            <MobileIcon onClick={toggle}>
+              <FaBars />
+            </MobileIcon>
+            <NavMenu >
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
     </>
   )
 }
