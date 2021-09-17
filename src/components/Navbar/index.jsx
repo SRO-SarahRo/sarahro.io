@@ -28,9 +28,9 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>SarahRO</NavLogo>
-            <NavLogo to={{ pathname: "https://docs.sarahro.io/" }} target="_blank">Docs</NavLogo>
-            <NavLogo to={{ pathname: "https://swap.sarahro.io/" }} target="_blank">Swap xSRO</NavLogo>
-            <NavLogo to={{ pathname: "https://apps.sarahro.io/" }} target="_blank">APPS</NavLogo>
+            <NavLogo to={{ pathname: "" }} target="_blank">Docs(Coming Soon)</NavLogo>
+            <NavLogo to={{ pathname: "" }} target="_blank">Swap xSRO(Coming Soon)</NavLogo>
+            <NavLogo to={{ pathname: "" }} target="_blank">APPS(Coming Soon)</NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
