@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollToTop from '../components/ScrollToTop'
-import Notified from '../Notified'
+// import Notified from '../Notified'
 
 
 const NotifiedPage = () => {
@@ -8,7 +8,7 @@ const NotifiedPage = () => {
   return (
     <>
       <ScrollToTop />
-      <Notified />
+      {/* <Notified /> */}
     </>
   )
 }

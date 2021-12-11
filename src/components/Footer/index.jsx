@@ -1,6 +1,8 @@
 import React from 'react'
-import { FaTwitter, FaGithub, FaTelegram, FaDiscord, FaMedium } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaTelegram } from 'react-icons/fa'
 import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
+
+// Add FaDiscord, FaMedium from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -17,15 +19,15 @@ const Footer = () => {
               <SocialIconLink href='https://twitter.com/Sarahro_Sro' target='_blank' arial-label='Twitter'>
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href='https://medium.com/@sarahro_sro' target='_blank' arial-label='Medium'>
+              {/* <SocialIconLink href='https://medium.com/@sarahro_sro' target='_blank' arial-label='Medium'>
                 <FaMedium />
-              </SocialIconLink>
+              </SocialIconLink> */}
               <SocialIconLink href='https://t.me/sarahro0' target='_blank' arial-label='Telegram'>
                 <FaTelegram />
               </SocialIconLink>
-              <SocialIconLink href='' target='_blank' arial-label='Discord'>
+              {/* <SocialIconLink href='' target='_blank' arial-label='Discord'>
                 <FaDiscord />
-              </SocialIconLink>
+              </SocialIconLink> */}
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
