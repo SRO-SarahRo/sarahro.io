@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, NavMenu } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
 
 // Add MobileIcon from './NavbarElements';
@@ -35,9 +35,6 @@ const Navbar = ({ toggle }) => {
             <NavLogo to={{ pathname: "" }} target="_blank">APPS(Coming Soon)</NavLogo>
             <MobileIcon onClick={toggle}> */}
             <FaBars />
-            {/* </MobileIcon> */}
-            <NavMenu >
-            </NavMenu>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
